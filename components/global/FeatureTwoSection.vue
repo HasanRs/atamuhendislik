@@ -54,7 +54,7 @@ export default {
           </ul>
         </div>
         <div class="h-full mt-12 lg:mt-0 border-mercury-400 lg:pl-24 md:border-l md:pl-12">
-          <img alt="Lexingtøn thumbnail" class="object-cover bg-gray-300" src="https://images.unsplash.com/photo-1692128558808-a07e05445896?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80" />
+          <img alt="cover" class="object-cover bg-gray-300" src="https://images.unsplash.com/photo-1603577892244-2645763c6bec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1036&q=80" />
         </div>
       </div>
     </div>

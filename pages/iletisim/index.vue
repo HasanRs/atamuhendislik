@@ -123,7 +123,7 @@ export default {
           <div class="absolute inset-0 object-cover w-full h-full bg-white" alt="" height="1866" width="1664">
             <img
               class="object-center w-full h-auto bg-gray-200"
-              src="https://images.unsplash.com/photo-1691839227411-9ad2ac6a944a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80"
+              src="https://images.unsplash.com/photo-1603172159066-6ade2af706c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1035&q=80"
               alt=""
               width="1310"
               height="873"

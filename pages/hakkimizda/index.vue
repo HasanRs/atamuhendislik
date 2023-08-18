@@ -35,7 +35,7 @@
                 <img
                   class="object-cover object-center w-full mx-auto bg-gray-300 lg:ml-auto"
                   alt="hero"
-                  src="https://images.unsplash.com/photo-1691839227411-9ad2ac6a944a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80"
+                  src="https://images.unsplash.com/photo-1636218685495-8f6545aadb71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80"
                 />
               </div>
             </div>

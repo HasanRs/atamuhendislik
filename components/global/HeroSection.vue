@@ -36,7 +36,7 @@ export default {
             <img
               class="object-cover object-center w-full mx-auto bg-gray-300 border lg:ml-auto"
               alt="hero"
-              src="https://images.unsplash.com/photo-1691767971416-2df5d50bcdc3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1015&q=80"
+              src="https://images.unsplash.com/photo-1631899483253-c8de3fb3d4db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=989&q=80"
             />
           </div>
         </div>
