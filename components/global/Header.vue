@@ -1,65 +1,65 @@
-<template>
-  <nav class="scrim-bg fixed z-40 top-0 inset-x-0 pt-3 px-3" aria-label="Main Menu">
-    <ul class="flex">
-      <li class="flex-1">
-        <nuxt-link class="btn block" to="/">Home</nuxt-link>
-      </li>
-      <li class="flex-1 ml-2">
-        <nuxt-link class="btn block" to="/blog">Blog</nuxt-link>
-      </li>
-      <li class="flex-1 ml-2">
-        <nuxt-link class="btn block" to="/projects">Projects</nuxt-link>
-      </li>
-    </ul>
-  </nav>
-</template>
-
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
+  data() {
+    return {
+      open: false,
+    }
+  },
 }
 </script>
+<template>
+  <div class="w-full mx-auto bg-white border-b 2xl:max-w-7xl">
+    <div
+      x-data="{ open: false }"
+      class="relative flex flex-col w-full p-5 mx-auto bg-white md:items-center md:justify-between md:flex-row md:px-6 lg:px-8"
+    >
+      <div class="flex flex-row items-center justify-between lg:justify-start">
+        <nuxt-link class="text-lg tracking-tight text-black uppercase focus:outline-none focus:ring lg:text-2xl" to="/">
+          <img src="../../assets/images/atamuhlogo.png" alt="logo" class="w-28 h-14" />
+        </nuxt-link>
+        <button
+          @click="open = !open"
+          class="inline-flex items-center justify-center p-2 text-gray-400 hover:text-black focus:outline-none focus:text-black md:hidden"
+        >
+          <svg class="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+            <path
+              :class="{ hidden: open, 'inline-flex': !open }"
+              class="inline-flex"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+            <path
+              :class="{ hidden: !open, 'inline-flex': open }"
+              class="hidden"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <nav
+        :class="{ flex: open, hidden: !open }"
+        class="flex-col items-center flex-grow hidden md:pb-0 md:flex md:justify-end md:flex-row"
+      >
+        <nuxt-link class="px-2 py-2 text-sm text-gray-500 lg:px-6 md:px-3 hover:text-blue-600 lg:ml-auto" to="/"> Anasayfa </nuxt-link>
+        <nuxt-link class="px-2 py-2 text-sm text-gray-500 lg:px-6 md:px-3 hover:text-blue-600" to="/projects"> Projeler </nuxt-link>
+        <nuxt-link class="px-2 py-2 text-sm text-gray-500 lg:px-6 md:px-3 hover:text-blue-600" to="/blog"> Blog </nuxt-link>
+        <nuxt-link class="px-2 py-2 text-sm text-gray-500 lg:px-6 md:px-3 hover:text-blue-600" to="/hakkimizda"> Hakkımızda </nuxt-link>
 
-<style lang="postcss" scoped>
-.scrim-bg {
-  &::before {
-    content: '';
-    z-index: -1;
-    background-color: var(--bg);
-    @apply absolute bottom-0 inset-x-0 h-12 mb-4 transition-colors duration-200 ease-in-out;
-  }
-  &::after {
-    content: '';
-    z-index: -1;
-    opacity: 1;
-    animation: fadeIn1 500ms ease-in-out;
-    @apply pointer-events-none absolute bottom-0 inset-x-0 h-16 -mb-12;
-    background: linear-gradient(to bottom, #111827, cubic-bezier(0.15, 0, 0.45, 1), transparent);
-  }
-}
-.nuxt-link-exact-active {
-  @apply text-gray-200 border-gray-400 bg-gray-800 bg-opacity-25 cursor-default;
-}
-
-.light {
-  & .scrim-bg {
-    &::after {
-      animation-name: fadeIn2;
-      background: linear-gradient(to bottom, #e5e7eb, cubic-bezier(0.15, 0, 0.45, 1), transparent);
-    }
-  }
-  & .nuxt-link-exact-active {
-    @apply text-primary-700 border-gray-600 bg-gray-100;
-  }
-}
-
-/* Need two because of smoother switching between color modes */
-@keyframes fadeIn1 {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-@keyframes fadeIn2 {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-</style>
+        <div class="inline-flex items-center gap-2 list-none lg:ml-auto">
+          <nuxt-link
+            class="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-white bg-black rounded-full group focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 hover:bg-gray-700 active:bg-gray-800 active:text-white focus-visible:outline-black"
+            to="/iletisim"
+          >
+            İletişim
+          </nuxt-link>
+        </div>
+      </nav>
+    </div>
+  </div>
+</template>
